@@ -40,7 +40,8 @@ namespace argos {
    static const Real PROXIMITY_SENSOR_RING_ELEVATION       = 0.06f;
    static const Real PROXIMITY_SENSOR_RING_RADIUS          = BODY_RADIUS;
    static const CRadians PROXIMITY_SENSOR_RING_START_ANGLE = CRadians((ARGOS_PI / 12.0f) * 0.5f);
-   static const Real PROXIMITY_SENSOR_RING_RANGE           = 0.1f;
+   static const Real LIGHT_SENSOR_RING_RANGE           = 0.1f;
+   static const Real PROXIMITY_SENSOR_RING_RANGE           = 0.2f;
 
    static const Real LED_RING_ELEVATION         = 0.085f;
    static const Real RAB_ELEVATION              = 0.1f;
@@ -158,7 +159,7 @@ namespace argos {
             CVector3(0.0f, 0.0f, PROXIMITY_SENSOR_RING_ELEVATION),
             PROXIMITY_SENSOR_RING_RADIUS,
             PROXIMITY_SENSOR_RING_START_ANGLE,
-            PROXIMITY_SENSOR_RING_RANGE,
+            LIGHT_SENSOR_RING_RANGE,
             24,
             m_pcEmbodiedEntity->GetOriginAnchor());
          /* Gripper equipped entity */
@@ -319,7 +320,7 @@ namespace argos {
             CVector3(0.0f, 0.0f, PROXIMITY_SENSOR_RING_ELEVATION),
             PROXIMITY_SENSOR_RING_RADIUS,
             PROXIMITY_SENSOR_RING_START_ANGLE,
-            PROXIMITY_SENSOR_RING_RANGE,
+            LIGHT_SENSOR_RING_RANGE,
             24,
             m_pcEmbodiedEntity->GetOriginAnchor());
          /* Gripper equipped entity */
