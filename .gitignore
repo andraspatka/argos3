@@ -19,3 +19,5 @@ doinst.sh
 slack-desc
 TAGS
 .dir-locals.el
+.idea
+cmake-build-debug
